@@ -31,14 +31,9 @@ const Hero = () => {
 
 
         {/* right side */}
-        <motion.div 
-        variants={fadeIn('right', 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{once: false, amount: 0.7}}
-        className='md:w-1/2'>
-            <img src={heroImg} alt="hero image" className='md:w-[526px] md:ml-44 w-full object-cover' />
-        </motion.div>
+        <div className='md:w-1/2'>
+            <img src={heroImg} alt="hero image" className='w-full object-cover' />
+        </div>
       </div>
     </section>
   )
